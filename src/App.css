@@ -1,0 +1,16 @@
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin: 5px;
+}
+.body {
+  background-color: aliceblue;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
