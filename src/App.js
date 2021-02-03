@@ -145,7 +145,10 @@ class App extends React.Component {
     return (
       <div>
         <div className="app">
-          <div className=" ui left icon input focus" style={{ margin: "5px" }}>
+          <div
+            className=" ui left icon input focus"
+            style={{ margin: "5px", width: "272px" }}
+          >
             <input
               type="text"
               placeholder="Add a new Friend"
@@ -157,11 +160,11 @@ class App extends React.Component {
         </div>
         <div className="app">
           <div>
-            <button className="ui basic button" onClick={this.handleAddFriend}>
+            <button className="ui button" onClick={this.handleAddFriend}>
               <i className="icon user"></i>
               Add Friend
             </button>
-            <button className="ui basic button" onClick={this.clearAll}>
+            <button className="ui button" onClick={this.clearAll}>
               <i className="icon trash"></i>
               Clear All
             </button>
