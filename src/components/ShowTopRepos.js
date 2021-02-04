@@ -18,10 +18,8 @@ function ShowTopRepos(props) {
             <div className="description">{repos.description}</div>
           </div>
           <div className="extra content">
-            <a>
-              <i className="star yellow icon"></i>
-              {repos.stargazers_count} stars
-            </a>
+            <i className="star yellow icon"></i>
+            {repos.stargazers_count} stars
           </div>
         </div>
       ))}

@@ -36,8 +36,9 @@ class App extends React.Component {
     this.setState({
       loading: true,
     });
-    console.log(this.state.lang);
-    window.API.fetchPopularRepos(this.state.lang).then((data) => {
+    window.API.fetchPopularRepos(
+      this.state.lang === "" ? "all" : this.state.lang
+    ).then((data) => {
       console.log(data[0]);
       this.setState({
         allRepos: data,
